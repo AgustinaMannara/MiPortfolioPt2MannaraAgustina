@@ -108,7 +108,19 @@ hr {
   transform: scale(1.03);
 }
 
+.portfolio .btn-primary {
+  background-color: #7c8c52;
+  border-color: #7c8c52;
+  color: #ffffff;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
 
+.portfolio .btn-primary:hover,
+.portfolio .btn-primary:focus {
+  background-color: #99a840;
+  border-color: #99a840;
+  color: #ffffff;
+}
 
 .acerca {
   padding: 90px 20px;
