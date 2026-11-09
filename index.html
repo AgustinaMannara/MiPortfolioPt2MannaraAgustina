@@ -21,6 +21,13 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
   >
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -98,11 +105,27 @@
 
       <hr>
 
-      <div class="row justify-content-center g-4">
+      <div class="surprise-picker text-center">
+        <p>¿No sabés cuál mirar? Dejá que el portfolio elija por vos.</p>
+        <button type="button" class="btn btn-primary" id="surprise-button">
+          <i class="bi bi-stars me-2" aria-hidden="true"></i>Sorprendeme
+        </button>
+        <div
+          class="surprise-result"
+          id="surprise-result"
+          aria-live="polite"
+          aria-atomic="true"
+          hidden
+        ></div>
+      </div>
 
-        <div class="col-12 col-md-4 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img src="Headphones.jpg" class="card-img-top" alt="Proyecto 1">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 portfolio-grid">
+
+        <div class="col">
+          <div class="card h-100">
+            <a href="Headphones.jpg" target="_blank" rel="noopener noreferrer">
+              <img src="Headphones.jpg" class="card-img-top" alt="Proyecto 1">
+            </a>
             <div class="card-body">
               <h5 class="card-title">Proyecto 1</h5>
               <p class="card-text">Primer Deploy con Github Pages.</p>
@@ -111,9 +134,11 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-4 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img src="sun.jpg" class="card-img-top" alt="Proyecto 2">
+        <div class="col">
+          <div class="card h-100">
+            <a href="sun.jpg" target="_blank" rel="noopener noreferrer">
+              <img src="sun.jpg" class="card-img-top" alt="Proyecto 2">
+            </a>
             <div class="card-body">
               <h5 class="card-title">Proyecto 2</h5>
               <p class="card-text">Landing Page Profesional.</p>
@@ -122,9 +147,11 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-4 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img src="Paintbrush.jpg" class="card-img-top" alt="Proyecto 3">
+        <div class="col">
+          <div class="card h-100">
+            <a href="Paintbrush.jpg" target="_blank" rel="noopener noreferrer">
+              <img src="Paintbrush.jpg" class="card-img-top" alt="Proyecto 3">
+            </a>
             <div class="card-body">
               <h5 class="card-title">Proyecto 3</h5>
               <p class="card-text">Landing Page de Producto Style.</p>
@@ -133,13 +160,11 @@
           </div>
         </div>
 
-      </div>
-
-      <div class="row justify-content-center g-4">
-
-        <div class="col-12 col-md-4 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img src="Landscape.jpg" class="card-img-top" alt="Proyecto 4">
+        <div class="col">
+          <div class="card h-100">
+            <a href="Landscape.jpg" target="_blank" rel="noopener noreferrer">
+              <img src="Landscape.jpg" class="card-img-top" alt="Proyecto 4">
+            </a>
             <div class="card-body">
               <h5 class="card-title">Proyecto 4</h5>
               <p class="card-text">Registro y Contacto para una App.</p>
@@ -148,13 +173,94 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-4 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img src="Flowers.jpg" class="card-img-top" alt="Proyecto 5">
+        <div class="col">
+          <div class="card h-100">
+            <a href="Flowers.jpg" target="_blank" rel="noopener noreferrer">
+              <img src="Flowers.jpg" class="card-img-top" alt="Proyecto 5">
+            </a>
             <div class="card-body">
               <h5 class="card-title">Proyecto 5</h5>
               <p class="card-text">Ecommerce Store Product Gallery.</p>
               <a href="https://agustinamannara.github.io/EcommerceStoreProduct/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <a href="Birds.jpg" target="_blank" rel="noopener noreferrer">
+              <img src="Birds.jpg" class="card-img-top" alt="Proyecto 6">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 6</h5>
+              <p class="card-text">Calculadora de abastecimiento de por vida.</p>
+              <a href="https://agustinamannara.github.io/Unidad7DesafioMannara/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <a href="Cat.jpg" target="_blank" rel="noopener noreferrer">
+              <img src="Cat.jpg" class="card-img-top" alt="Proyecto 7">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 7</h5>
+              <p class="card-text">¿Puedo jubilarme?</p>
+              <a href="https://agustinamannara.github.io/Unidad8DesafioMannara/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <a href="Peach.jpg" target="_blank" rel="noopener noreferrer">
+              <img src="Peach.jpg" class="card-img-top" alt="Proyecto 8">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 8</h5>
+              <p class="card-text">Torneo Algorítmico.</p>
+              <a href="https://agustinamannara.github.io/Unidad9DESAFIOPiedraPapelTijerasMannara/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <a href="Sunlight.jpg" target="_blank" rel="noopener noreferrer">
+              <img src="Sunlight.jpg" class="card-img-top" alt="Proyecto 9">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 9</h5>
+              <p class="card-text">Lista de Súper en tres partes.</p>
+              <div class="dropdown">
+                <button
+                  class="btn btn-primary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Ver partes
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://agustinamannara.github.io/ArrayU11.ListaDeSuperPt1Mannara/" target="_blank" rel="noopener noreferrer">Parte 1</a></li>
+                  <li><a class="dropdown-item" href="https://agustinamannara.github.io/ListaDeSuperMannaraPt2/" target="_blank" rel="noopener noreferrer">Parte 2</a></li>
+                  <li><a class="dropdown-item" href="https://agustinamannara.github.io/ListaDeSuperParte3.Mannara/" target="_blank" rel="noopener noreferrer">Parte 3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <a href="LandscapeCats.jpg" target="_blank" rel="noopener noreferrer">
+              <img src="LandscapeCats.jpg" class="card-img-top" alt="Proyecto 10">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 10</h5>
+              <p class="card-text">Color Game Project.</p>
+              <a href="https://agustinamannara.github.io/ColorGameProject/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver proyecto</a>
             </div>
           </div>
         </div>
@@ -176,7 +282,8 @@
       <hr>
 
       <p>
-        Soy estudiante de secundaria, aprendiendo a programar y a crear proyectos web. Me interesa el arte, me gusta escuchar distintos tipos de música y aprender cosas nuevas. 
+        Soy estudiante de secundaria, aprendiendo a programar y a crear proyectos web. Me interesa el arte, me gusta escuchar distintos tipos de música y aprender cosas nuevas.
+      </p>
 
     </div>
 
@@ -327,9 +434,63 @@
 
   </footer>
 
+  <button
+    type="button"
+    class="back-to-top"
+    id="back-to-top"
+    aria-label="Volver arriba"
+    title="Volver arriba"
+    hidden
+  >
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   ></script>
+  <script>
+    const backToTopButton = document.getElementById('back-to-top');
+
+    function updateBackToTopButton() {
+      backToTopButton.hidden = window.scrollY < 320;
+    }
+
+    window.addEventListener('scroll', updateBackToTopButton, { passive: true });
+    updateBackToTopButton();
+
+    backToTopButton.addEventListener('click', () => {
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({
+        top: 0,
+        behavior: prefersReducedMotion ? 'auto' : 'smooth'
+      });
+    });
+
+    const surpriseButton = document.getElementById('surprise-button');
+    const surpriseResult = document.getElementById('surprise-result');
+    const portfolioCards = Array.from(
+      document.querySelectorAll('#portfolio .portfolio-grid > .col > .card')
+    );
+    let lastRecommendedCard = null;
+
+    surpriseButton.addEventListener('click', () => {
+      if (portfolioCards.length === 0) {
+        surpriseResult.textContent = 'Todavía no hay proyectos para recomendar.';
+        surpriseResult.hidden = false;
+        return;
+      }
+
+      const choices = portfolioCards.filter((card) => card !== lastRecommendedCard);
+      const cardPool = choices.length > 0 ? choices : portfolioCards;
+      const selectedCard = cardPool[Math.floor(Math.random() * cardPool.length)];
+      const recommendation = selectedCard.cloneNode(true);
+
+      lastRecommendedCard = selectedCard;
+      recommendation.classList.add('surprise-card');
+      surpriseResult.replaceChildren(recommendation);
+      surpriseResult.hidden = false;
+    });
+  </script>
 
 </body>
 </html>
